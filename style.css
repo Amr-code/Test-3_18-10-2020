@@ -21,9 +21,9 @@ a:hover {
     font-size: large;
 }
 
-i:hover {
+.projectIcon:hover {
     color: #f6b60b;
-    font-size: 60px;
+    font-size: 55px;
 }
 
 li {
@@ -31,6 +31,7 @@ li {
 }
 
 .mainMenu {
+    margin-top: 5px;
     direction: ltr;
     background: white;
     height: 57px;
@@ -45,6 +46,16 @@ li {
     -webkit-box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
     box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: 150px 50px;
+    background-position-x: 97%;
+    background-position-y: 2px;
+}
+
+.buttons {
+    display: flex;
+    margin-right: 12%;
 }
 
 .button {
@@ -114,6 +125,11 @@ li {
 
 .aboutUs {
     width: auto;
+    background-image: url("about_client.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px 450px;
+    background-position-y: 135px;
+    background-position-x: 85%;
 }
 
 .aboutUsTite {
@@ -189,11 +205,12 @@ li {
     height: 72px;
     background: black;
     color: #ffffff;
-    font-size: xxx-large;
+    font-size: 45px;
     text-align: center;
     margin-right: 141px;
     position: absolute;
     margin-block-start: -38px;
+    padding-bottom: 5px;
 }
 
 .contactUsTite {
@@ -207,4 +224,23 @@ li {
     height: 8px;
     width: 80px;
     background: #f6b60b;
+}
+
+.name,
+.email,
+.creditor {
+    padding-right: 5px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: #f1f1f1;
+    border-style: hidden;
+}
+
+.comment {
+    padding-right: 5px;
+    height: 140px;
+    margin-bottom: 10px;
+    background: #f1f1f1;
+    border-style: hidden;
+    padding-bottom: 90px;
 }

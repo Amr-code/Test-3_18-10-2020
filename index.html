@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,20 +11,18 @@
 
     <title>כותרת</title>
 </head>
-<<<<<<< HEAD
 <!--comment-->
-=======
-<!-- this is good code : s-amasha -->
->>>>>>> 71c50ec15cb76a93c4f2e9a629ec7ffc9ab4fe4c
 
 <body>
+
     <nav>
         <div class="mainMenu">
-            <li><a class="button" href="#div4"> התקשר </a></li>
-            <li><a class="button" href="#div3"> פרויקטים </a></li>
-            <li><a class="button" href="#div2"> מי אנחנו </a></li>
-            <li><a class="button" href="#div1"> אודות החברה </a></li>
-            <img class="logo" src="logo.png">
+            <div class="buttons">
+                <li><a class="button" href="#div4"> התקשר </a></li>
+                <li><a class="button" href="#div3"> פרויקטים </a></li>
+                <li><a class="button" href="#div2"> מי אנחנו </a></li>
+                <li><a class="button" href="#div1"> אודות החברה </a></li>
+            </div>
         </div>
     </nav>
 
@@ -66,7 +64,6 @@
         <h4 style="text-align: center; color:  #222222;">פשוט טקסט דמה של תעשיית ההדפסה והכתיבה</h4>
         <div style=" margin-top: 50px;">
             <div class="aboutUs-cd">
-                <img style=" margin-block-end: -423px; margin-inline-start: -524px; width: 500px; height: 400px;" src="about_client.jpg">
                 <h1 style="direction: rtl; margin-block-start: -25px; font-size: 50px;">מי אנחנו</h1>
                 <div class="lineBlack"></div>
                 <h4 style=" direction: rtl; margin-top: 30px; color:  #222222;">קיימות וריאציות רבות של קטעי לורם איפסום, אך הרוב סבלו משינוי בצורה כלשהי, על ידי הומור מוזרק, או מילים אקראיות שאינן נראות אפילו אמינות מעט. אם אתה מתכוון להשתמש בקטע של לורם איפסום, עליך להיות בטוח שאין שום דבר מביך המוסתר באמצע הטקסט.
@@ -123,14 +120,12 @@
             <h3 style="margin-right: 50%;">פניות</h3>
             <h4 style="margin-right: 50%; margin-left: 47px;">לפניות , שאלות ובירורים נא להתקשר לטלפון (04-12345678) או לשלוח הודעה בטפס הבא:</h4>
             <div style=" display: inline-grid; margin-right: 50%; padding-top: 30px; width: 530px; margin-left: 47px;">
-                <input type="text" style="padding-right:5px; height: 30px; margin-bottom: 10px; background: #f1f1f1; border-style: hidden;" value="" required="" placeholder="שם פרטי *" maxlength="250">
-                <input type="email" style="padding-right:5px; height: 30px; margin-bottom: 10px; background: #f1f1f1; border-style: hidden;" value="" required="" placeholder="מייל *" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250">
-                <input type="text" style="padding-right:5px; height: 30px; margin-bottom: 10px; background: #f1f1f1; border-style: hidden;" value="" required="" placeholder="נושה" maxlength="250">
-                <input type="text" style="padding-right:5px; height: 140px; margin-bottom: 10px; background: #f1f1f1; border-style: hidden; padding-bottom: 90px;" value="" required="" placeholder="הודעה " maxlength="250">
+                <input class="name" type="text" value="" required="" placeholder="שם פרטי *" maxlength="250">
+                <input class="email" type="email" value="" required="" placeholder="מייל *" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250">
+                <input class="creditor" type="text" value="" required="" placeholder="נושה" maxlength="250">
+                <input class="comment" type="text" value="" required="" placeholder="הודעה " maxlength="250">
                 <div style="height: 30px; width: 55px; background: #222222; color: white; font-size: x-large; text-align: center; padding-bottom: 38px; margin-right: 475px;">שלח</div>
-
             </div>
-
         </div>
     </div>
     </div>
