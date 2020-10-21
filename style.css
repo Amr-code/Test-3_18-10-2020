@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+@-webkit-keyframes test {
+    0% {
+        background-image: url('slider-1.jpg');
+    }
+    20% {
+        background-image: url('slider-2.png');
+    }
+    40% {
+        background-image: url('slider-1.jpg');
+    }
+    60% {
+        background-image: url('slider-2.png');
+    }
+    80% {
+        background-image: url('slider-1.jpg');
+    }
+    100% {
+        background-image: url('slider-2.png');
+    }
+}
+
 body {
     direction: rtl;
 }
@@ -70,9 +91,15 @@ li {
 
 .slid {
     padding-top: 200px;
-    height: 650px;
+    height: 550px;
     background-image: url("slider-1.jpg");
     background-color: black;
+    background-repeat: no-repeat;
+    -webkit-animation-name: test;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: 999999;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
 }
 
 .welcome {
@@ -125,9 +152,8 @@ li {
 
 .aboutUs {
     width: auto;
-    background-image: url("about_client.jpg");
+    background-image: url("about_client1.png");
     background-repeat: no-repeat;
-    background-size: 450px 450px;
     background-position-y: 135px;
     background-position-x: 85%;
 }
@@ -195,9 +221,19 @@ li {
 }
 
 .project {
-    background: #ffffff;
+    background: #f6b60b;
     height: 362px;
     margin: 10px;
+}
+
+.cnsTite {
+    margin-top: 35px;
+    max-width: 360px;
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    margin-top: 0px;
+    padding-top: 36px;
 }
 
 .projectIcon {
