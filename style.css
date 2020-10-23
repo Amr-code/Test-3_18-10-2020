@@ -57,6 +57,7 @@ li {
     background: white;
     height: 57px;
     width: -webkit-fill-available;
+    width: -moz-available;
     position: fixed;
     display: flex;
     justify-content: flex-end;
