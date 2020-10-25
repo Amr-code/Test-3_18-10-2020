@@ -6,23 +6,60 @@
 
 @-webkit-keyframes test {
     0% {
-        background-image: url('slider-1.jpg');
+        background-image: url('slider-1.png');
     }
     20% {
         background-image: url('slider-2.png');
     }
     40% {
-        background-image: url('slider-1.jpg');
+        background-image: url('slider-1.png');
     }
     60% {
         background-image: url('slider-2.png');
     }
     80% {
-        background-image: url('slider-1.jpg');
+        background-image: url('slider-1.png');
     }
     100% {
         background-image: url('slider-2.png');
     }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
 }
 
 body {
@@ -52,12 +89,12 @@ li {
 }
 
 .mainMenu {
-    margin-top: 5px;
     direction: ltr;
     background: white;
-    height: 57px;
+    height: 65px;
     width: -webkit-fill-available;
     width: -moz-available;
+    width: 100%;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -70,9 +107,8 @@ li {
     box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
     background-image: url("logo.png");
     background-repeat: no-repeat;
-    background-size: 150px 50px;
     background-position-x: 97%;
-    background-position-y: 2px;
+    background-position-y: 38%;
 }
 
 .buttons {
@@ -92,8 +128,9 @@ li {
 
 .slid {
     padding-top: 200px;
-    height: 550px;
-    background-image: url("slider-1.jpg");
+    width: 100%;
+    height: 750px;
+    background-image: url("slider-1.png");
     background-color: black;
     background-repeat: no-repeat;
     -webkit-animation-name: test;
@@ -106,16 +143,26 @@ li {
 .welcome {
     color: #f6b60b;
     font-size: 40px;
+    visibility: visible;
+    animation-delay: 0.8s;
+    animation-name: fadeInUp;
 }
 
 .tite1 {
     color: white;
     font-size: 40px;
+    visibility: visible;
+    animation-delay: 0.8s;
+    animation-name: fadeInUp;
 }
 
 .tite2 {
     color: white;
     direction: rtl;
+    margin-top: 50px;
+    visibility: visible;
+    animation-delay: 0.8s;
+    animation-name: fadeInUp;
 }
 
 .icons {
@@ -123,53 +170,57 @@ li {
     background: #f5f5f5;
     justify-content: space-evenly;
     direction: rtl;
-    padding-top: 20px;
+    padding-top: 65px;
     margin-top: -20px;
+    height: 300px;
+    width: 100%;
 }
 
 .ico {
     margin-right: 32px;
     color: #f6b60b;
-    font-size: xx-large;
+    font-size: 48px;
 }
 
 .ico3 {
     margin-right: 41px;
     color: #f6b60b;
-    font-size: xx-large;
+    font-size: 48px;
 }
 
 .ico1 {
     margin-right: 48px;
     color: #f6b60b;
-    font-size: xx-large;
+    font-size: 48px;
 }
 
 .ico2 {
     margin-right: 67px;
     color: #f6b60b;
-    font-size: xx-large;
+    font-size: 48px;
 }
 
 .aboutUs {
-    width: auto;
-    background-image: url("about_client1.png");
+    padding-top: 100px;
+    width: 100%;
+    background-image: url("about_client.jpg");
     background-repeat: no-repeat;
-    background-position-y: 135px;
-    background-position-x: 85%;
+    background-position-y: 285px;
+    background-position-x: 90%;
+    height: 800px;
 }
 
 .aboutUsTite {
     margin-top: -1px;
     color: #222222;
-    font-size: 40px;
-    margin-bottom: 17px;
+    margin-bottom: 25px;
+    font: 400 40px "Oswald", sans-serif;
 }
 
 .lineOrange {
-    margin-top: 10px;
-    height: 6px;
-    width: 103px;
+    margin-top: 15px;
+    height: 5px;
+    width: 60px;
     background: #f6b60b;
     margin: auto;
 }
@@ -187,8 +238,8 @@ li {
 }
 
 .lineBlack {
-    height: 4px;
-    width: 110px;
+    height: 2px;
+    width: 90px;
     background: #222222;
 }
 
@@ -203,14 +254,16 @@ li {
 
 .whatWeOffer {
     min-height: 650px;
-    width: auto;
+    width: 100%;
     background: #f6b60b;
+    padding-top: 100px;
+    height: 800px;
 }
 
 .whiteLine {
-    margin-top: 10px;
-    height: 6px;
-    width: 103px;
+    margin-top: 15px;
+    height: 5px;
+    width: 60px;
     background: white;
     margin: auto;
 }
@@ -250,11 +303,17 @@ li {
     padding-bottom: 5px;
 }
 
+.contactUs {
+    padding-top: 100px;
+    height: 800px;
+    width: 100%;
+}
+
 .contactUsTite {
     margin-top: -1px;
     color: #222222;
-    font-size: 40px;
-    margin-bottom: 17px;
+    font: 400 40px "Oswald", sans-serif;
+    margin-bottom: 25px;
 }
 
 .lineOrange2 {
