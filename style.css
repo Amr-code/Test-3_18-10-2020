@@ -81,7 +81,10 @@ a:hover {
 
 .projectIcon:hover {
     color: #f6b60b;
-    font-size: 55px;
+}
+
+.projectIcon .fa:hover {
+    transform: scale(1.5);
 }
 
 li {
@@ -287,20 +290,22 @@ li {
     background-color: white;
     height: 200px;
     margin-top: 0px;
-    padding-top: 36px;
+    color: #555555;
+    padding-top: 50px;
 }
 
 .projectIcon {
-    width: 72px;
-    height: 72px;
-    background: black;
+    width: 70px;
+    height: 70px;
+    background: #333333;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 30px;
     text-align: center;
-    margin-right: 141px;
+    margin-right: 143px;
     position: absolute;
     margin-block-start: -38px;
     padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 .contactUs {
