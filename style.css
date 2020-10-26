@@ -79,12 +79,10 @@ a:hover {
     font-size: large;
 }
 
-.projectIcon:hover {
-    color: #f6b60b;
-}
-
 .projectIcon .fa:hover {
     transform: scale(1.5);
+    color: #f6b60b;
+    transform: 3s;
 }
 
 li {
@@ -108,10 +106,12 @@ li {
     -webkit-box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
     -moz-box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
     box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position-x: 97%;
-    background-position-y: 38%;
+}
+
+.mainLogo {
+    margin-top: 10px;
+    height: 22px;
+    margin-left: -75px;
 }
 
 .buttons {
@@ -206,11 +206,12 @@ li {
 .aboutUs {
     padding-top: 100px;
     width: 100%;
-    background-image: url("about_client.jpg");
-    background-repeat: no-repeat;
-    background-position-y: 285px;
-    background-position-x: 90%;
     height: 800px;
+}
+
+.aboutUsPhoto {
+    margin-top: -446px;
+    margin-right: 85px;
 }
 
 .aboutUsTite {
@@ -327,9 +328,7 @@ li {
     background: #f6b60b;
 }
 
-.name,
-.email,
-.creditor {
+.contactUsInput {
     padding-right: 5px;
     height: 30px;
     margin-bottom: 10px;
