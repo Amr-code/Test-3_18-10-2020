@@ -2,27 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-@-webkit-keyframes test {
-    0% {
-        background-image: url('slider-1.png');
-    }
-    20% {
-        background-image: url('slider-2.png');
-    }
-    40% {
-        background-image: url('slider-1.png');
-    }
-    60% {
-        background-image: url('slider-2.png');
-    }
-    80% {
-        background-image: url('slider-1.png');
-    }
-    100% {
-        background-image: url('slider-2.png');
-    }
+    direction: rtl;
 }
 
 @keyframes fadeInUp {
@@ -89,66 +69,13 @@ li {
     list-style: none;
 }
 
-.mainMenu {
-    direction: ltr;
-    background: white;
-    height: 65px;
-    width: -webkit-fill-available;
-    width: -moz-available;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 70px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    z-index: 99999999;
-    -webkit-box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
-    -moz-box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
-    box-shadow: inset 3px -6px 3px -5px rgba(0, 0, 0, 1);
-}
-
-.mainLogo {
-    margin-top: 10px;
-    height: 22px;
-    margin-left: -75px;
-}
-
-.buttons {
-    display: flex;
-    margin-right: 12%;
-}
-
-.button {
-    display: flex;
-    margin-left: 18px;
-    margin-top: 9px;
-}
-
-.logo {
-    margin-left: 50px;
-}
-
-.slid {
-    padding-top: 200px;
-    width: 100%;
-    height: 750px;
-    background-image: url("slider-1.png");
-    background-color: black;
-    background-repeat: no-repeat;
-    -webkit-animation-name: test;
-    -webkit-animation-duration: 30s;
-    -webkit-animation-iteration-count: 999999;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-}
-
 .welcome {
     color: #f6b60b;
     font-size: 40px;
     visibility: visible;
     animation-delay: 0.8s;
     animation-name: fadeInUp;
+    margin-top: 10%;
 }
 
 .tite1 {
@@ -168,50 +95,30 @@ li {
     animation-name: fadeInUp;
 }
 
-.icons {
-    display: flex;
-    background: #f5f5f5;
-    justify-content: space-evenly;
-    direction: rtl;
-    padding-top: 65px;
-    margin-top: -20px;
-    height: 300px;
-    width: 100%;
-}
-
 .ico {
-    margin-right: 32px;
     color: #f6b60b;
     font-size: 48px;
 }
 
 .ico3 {
-    margin-right: 41px;
     color: #f6b60b;
     font-size: 48px;
 }
 
 .ico1 {
-    margin-right: 48px;
     color: #f6b60b;
     font-size: 48px;
 }
 
 .ico2 {
-    margin-right: 67px;
     color: #f6b60b;
     font-size: 48px;
 }
 
 .aboutUs {
-    padding-top: 100px;
+    direction: rtl;
     width: 100%;
     height: 800px;
-}
-
-.aboutUsPhoto {
-    margin-top: -446px;
-    margin-right: 85px;
 }
 
 .aboutUsTite {
@@ -231,7 +138,6 @@ li {
 
 .aboutUs-cd {
     margin-right: 609px;
-    direction: rtl;
     margin-left: 76px;
     min-height: 460px;
 }
@@ -272,16 +178,9 @@ li {
     margin: auto;
 }
 
-.projects {
-    margin-top: 80px;
-    display: flex;
-    place-content: center;
-}
-
 .project {
     background: #f6b60b;
     height: 362px;
-    margin: 10px;
 }
 
 .cnsTite {
@@ -289,7 +188,7 @@ li {
     max-width: 360px;
     text-align: center;
     background-color: white;
-    height: 200px;
+    height: 170px;
     margin-top: 0px;
     color: #555555;
     padding-top: 50px;
@@ -302,11 +201,11 @@ li {
     color: #ffffff;
     font-size: 30px;
     text-align: center;
-    margin-right: 143px;
     position: absolute;
     margin-block-start: -38px;
     padding-bottom: 5px;
     padding-top: 10px;
+    margin-left: 40%;
 }
 
 .contactUs {
