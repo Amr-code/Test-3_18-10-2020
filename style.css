@@ -205,7 +205,12 @@ li {
     margin-block-start: -38px;
     padding-bottom: 5px;
     padding-top: 10px;
-    margin-left: 40%;
+    margin-left: 38%;
+}
+
+.cardImg {
+    max-width: 360px;
+    width: -moz-available;
 }
 
 .contactUs {
