@@ -62,7 +62,7 @@ a:hover {
 .projectIcon .fa:hover {
     transform: scale(1.5);
     color: #f6b60b;
-    transition: width 2s, height 2s, transform 2s;
+    transform: 3s;
 }
 
 li {
