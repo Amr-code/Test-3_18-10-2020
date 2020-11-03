@@ -5,6 +5,34 @@
     direction: rtl;
 }
 
+@media(min-width:730px) {
+    .usimg {
+        width: auto;
+        height: -webkit-fill-available;
+    }
+    .projectIcon {
+        margin-left: 38%;
+        margin-block-start: -38px;
+    }
+}
+
+@media(max-width:730px) {
+    .usimg {
+        width: -webkit-fill-available;
+    }
+    .projectIcon {
+        margin-left: 38%;
+        margin-block-start: -38px;
+    }
+}
+
+@media(max-height:450px) {
+    .projectIcon {
+        margin-left: 42%;
+        margin-block-start: -38px;
+    }
+}
+
 @keyframes fadeInUp {
     from {
         transform: translate3d(0, 40px, 0)
@@ -201,12 +229,17 @@ li {
     color: #ffffff;
     font-size: 30px;
     text-align: center;
-    position: absolute;
-    margin-block-start: -38px;
     padding-bottom: 5px;
     padding-top: 10px;
-    margin-left: 38%;
+    position: absolute;
 }
+
+
+/*
+ margin-left: 38%;
+    position: absolute;
+    margin-block-start: -38px;
+*/
 
 .cardImg {
     max-width: 360px;
